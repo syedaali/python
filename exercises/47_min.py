@@ -1,7 +1,7 @@
 __author__ = 'syedaali'
 
 '''
-The Smallest Number in a Circular List in Python
+The Smallest Number in a  List in Python
 '''
 
 alist = [22, 52, 66, 82, 5, 8, 12, 19]
