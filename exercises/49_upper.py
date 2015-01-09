@@ -22,4 +22,3 @@ while True:
 
 for sent in lines:
     print sent
-

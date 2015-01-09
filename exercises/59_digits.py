@@ -18,8 +18,8 @@ s_list = s.split(',')
 
 a_list = []
 
-for i,num in enumerate(s_list):
-    i_num = int(num,2)
+for i, num in enumerate(s_list):
+    i_num = int(num, 2)
     print 'num is {}'.format(i_num)
     if i_num % 5 == 0:
         a_list.append(num)

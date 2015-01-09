@@ -18,10 +18,11 @@ The output of the program should be:
 
 import math
 
+
 def answer(d):
     c = 50
     h = 30
-    a = ((2*c*d)/h)
+    a = ((2 * c * d) / h)
     return int(math.sqrt(a))
 
 s = raw_input('enter numbers: ')
@@ -35,4 +36,4 @@ a_list = []
 for item in s_list:
     a_list.append(answer(item))
 
-print ','.join(map(str,a_list))
+print ','.join(map(str, a_list))

@@ -19,9 +19,9 @@ Then, the output should be:
 d = []
 w = []
 
-with open('deposit.txt','r') as f:
+with open('deposit.txt', 'r') as f:
     for line in f:
-        action,amount = line.split()
+        action, amount = line.split()
         if action == 'D':
             d.append(int(amount))
         if action == 'W':

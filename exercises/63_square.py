@@ -9,12 +9,12 @@ Then, the output should be:
 1,9,25,49,81
 '''
 
-l = [1,2,3,4,5,6,7,8,9]
+l = [1, 2, 3, 4, 5, 6, 7, 8, 9]
 
 function = lambda x: True if x % 2 != 0 else False
 
-o = filter(function,l)
+o = filter(function, l)
 
 function = lambda x: x * x
 
-print map(function,o)
+print map(function, o)

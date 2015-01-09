@@ -13,7 +13,7 @@ s = raw_input()
 
 s_list = []
 
-for index in range(1,5):
+for index in range(1, 5):
     s_list.append(s * index)
 
 s_list = [int(x) for x in s_list]

@@ -36,7 +36,7 @@ for word in p:
             if any(c.isdigit() for c in word):
                 if any(c in '$#@' for c in word):
                     if len(word) >= 6:
-                        if len(word) <=12:
+                        if len(word) <= 12:
                             is_password.append(word)
 
 

@@ -15,12 +15,11 @@ l = raw_input("enter: ")
 
 l = list(l)
 
+
 def function(l):
     if l != ',':
         return True
 
-print filter(function,l)
+print filter(function, l)
 
-print filter(function,tuple(l))
-
-
+print filter(function, tuple(l))

@@ -14,7 +14,7 @@ Then, the output should be:
 n = 8
 d = {}
 
-for num in range(1,n+1):
+for num in range(1, n + 1):
     d[num] = num * num
 
 print d

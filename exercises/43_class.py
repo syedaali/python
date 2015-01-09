@@ -8,6 +8,7 @@ Also please include simple test function to test the class methods.
 
 '''
 
+
 class Mine(object):
 
     def __init__(self):
@@ -24,4 +25,3 @@ s = Mine()
 s.getString()
 
 s.printString()
-
