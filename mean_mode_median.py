@@ -10,7 +10,7 @@ def f_mean(l):
 
 def f_median(l):
     n = np.array(l)
-    return np.mean(n)
+    return round(np.mean(n),1)
 
 def f_mode(l):
 
@@ -22,14 +22,19 @@ def f_mode(l):
     c = collections.Counter(l)
 
     #return key of dict that has the max value
+    #another way of doing c.most_common
     single = max(c.iterkeys(),key=lambda k: c[k])
 
-    return single
+    #get the key of the dups
+    match = c[single]
+    mlist = []
+    for k,v in [(k,v) for k,v in c.iteritems() if v == match]:
+        mlist.append(k)
 
-alist = [1,2,2,3,3,4,5]
+    #return c.most_common(1)[0][0]
+    return ','.join(map(str,mlist))
 
-print f_mean(alist)
-
-print f_median(alist)
-
-print f_mode(alist)
+alist = [1,2,3,3,4,5,5]
+print 'mean is {}'.format(f_mean(alist))
+print 'median is {}'.format(f_median(alist))
+print 'mode is {}'.format(f_mode(alist))
