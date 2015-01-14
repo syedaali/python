@@ -1,3 +1,7 @@
 __author__ = 'syedaali'
 
-x = [1,2]
+import collections
+l = [1,2,2,3,4,5,5,5,6]
+c = collections.Counter(l)
+for k,v in c.iteritems():
+    print '{} occurs {} time(s)'.format(k,v)
