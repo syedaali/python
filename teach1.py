@@ -1,0 +1,1 @@
+print("teach1)"i
